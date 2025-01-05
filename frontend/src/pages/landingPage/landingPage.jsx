@@ -106,7 +106,13 @@ export default function LandingPage() {
                 <DialogContent>
                     <Box
                         component="form"
-                        sx={{ "& > :not(style)": { m: 1, width: "500px" } }}
+                        sx={{
+                            "& > :not(style)": {
+                                m: 1,
+                                width: "500px",
+                                fontFamily: "PT Serif",
+                            },
+                        }}
                         noValidate
                         autoComplete="off"
                     >
@@ -118,43 +124,63 @@ export default function LandingPage() {
                         {/* ORDERNUMBER,SALES,STATUS,MONTH_ID,YEAR_ID,PRODUCTLINE,CUSTOMERNAME,PHONE,ADDRESSLINE,CITY,STATE,COUNTRY,DEALSIZE */}
                         <TextField
                             id="outlined-basic"
-                            label="SALES"
+                            label="Sales"
                             variant="outlined"
                         />
                         <TextField
                             id="outlined-basic"
-                            label="STATUS"
+                            label="Status"
                             variant="outlined"
                         />
                         <TextField
                             id="outlined-basic"
-                            label="SALES"
+                            label="Month"
                             variant="outlined"
                         />
                         <TextField
                             id="outlined-basic"
-                            label="STATUS"
+                            label="Year"
                             variant="outlined"
                         />
 
                         <TextField
                             id="outlined-basic"
-                            label="SALES"
+                            label="Product Line"
                             variant="outlined"
                         />
                         <TextField
                             id="outlined-basic"
-                            label="STATUS"
+                            label="Customer Name"
                             variant="outlined"
                         />
                         <TextField
                             id="outlined-basic"
-                            label="SALES"
+                            label="Phone Number"
                             variant="outlined"
                         />
                         <TextField
                             id="outlined-basic"
-                            label="STATUS"
+                            label="Address"
+                            variant="outlined"
+                        />
+                        <TextField
+                            id="outlined-basic"
+                            label="City"
+                            variant="outlined"
+                        />
+                        <TextField
+                            id="outlined-basic"
+                            label="State"
+                            variant="outlined"
+                        />
+                        <TextField
+                            id="outlined-basic"
+                            label="Country"
+                            variant="outlined"
+                        />
+                        <TextField
+                            id="outlined-basic"
+                            label="Deal Size"
                             variant="outlined"
                         />
                     </Box>
