@@ -9,7 +9,7 @@ from db.repository.sales import create_new_sale, retreive_sale, all_sales
 router = APIRouter()
 
 
-@router.post("/")
+@router.post("/create_new_sale")
 def create_sales(sales : Sales_Data_Create, db: Session = Depends(get_db)):
     sale = create_new_sale(sales=sales,db=db)
     return sale 
